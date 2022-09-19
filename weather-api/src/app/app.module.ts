@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { appRoutes } from './routes';
 import { WeatherAppComponent } from './weather-app/weather-app.component';
+import { ApixuService } from './apixu.service';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { WeatherAppComponent } from './weather-app/weather-app.component';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [ApixuService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
