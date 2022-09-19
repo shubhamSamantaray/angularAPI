@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class ApixuService {
   constructor(private http: HttpClient) { }
 
-  getWeather(location: string) {
-    return this.http.get('http://api.weatherstack.com/current?access_key=ddbfacf46865e6c8f35302d453e35a33&query=' + location);
+  getWeather(location) {
+    return this.http.get('http://api.weatherstack.com/current?access_key=AcessKey&query=' + location);
   }
 }
